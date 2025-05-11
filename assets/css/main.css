@@ -1,6 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap');
+
+.f-climate-crisis {
+    font-family: 'Climate Crisis', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    /* font-variation-settings:
+        "YEAR" 1979; */
+}
+
+:root {
+    --color-1: #ffffff;
+    --color-2: #111111;
+
+    --accent-color-1: #7ae2cf;
+    --accent-color-2: #077a7d;
+    --accent-color-3: #F5EEDD;
+}
+
 body {
-    margin: 0;
-    padding: 0;
     width: 100vw;
     overflow-x: hidden;
+}
+
+hero {
+    background: linear-gradient(60deg, var(--accent-color-1), var(--accent-color-2));
+}
+
+hero .text-container div {
+    font-size: 8rem;
+    line-height: 0.95;
+}
+
+hero .main-text {
+    color: transparent;
+    background: linear-gradient(to right, var(--accent-color-3), var(--accent-color-1));
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+}
+
+hero .bg-text-1,
+hero .bg-text-2 {
+    --bg-text-1-translate: -200px;
+    --bg-text-2-translate: 200px;
+
+    display: flex;
+    align-items: center;
+    text-wrap: nowrap;
+    color: transparent;
+    -webkit-text-stroke: 1.5px var(--color-1);
+}
+
+hero .bg-text-1 {
+    transform: translateX(var(--bg-text-1-translate));
+}
+
+hero .bg-text-2 {
+    justify-content: end;
+    transform: translateX(var(--bg-text-2-translate));
 }
