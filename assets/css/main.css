@@ -24,6 +24,7 @@ body {
 }
 
 hero {
+    cursor: default;
     background: linear-gradient(60deg, var(--accent-color-1), var(--accent-color-2));
 }
 
@@ -63,12 +64,21 @@ hero .bg-text-2 {
     /* transform: translateX(var(--bg-text-2-translate)); */
 }
 
+hero .modal model-viewer {
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    filter: brightness(0.9);
+}
+
 hero .filters-1 {
     background: #ff0000;
     mix-blend-mode: saturation;
+    pointer-events: none;
 }
 
 hero .filters-2 {
     background: #ff0000;
     mix-blend-mode: soft-light;
+    pointer-events: none;
 }
