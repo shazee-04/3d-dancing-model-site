@@ -50,13 +50,25 @@ hero .bg-text-2 {
     text-wrap: nowrap;
     color: transparent;
     -webkit-text-stroke: 1.5px var(--color-1);
+
+    /* transition: transform 1.2s ease-out; */
 }
 
-hero .bg-text-1 {
+/*hero .bg-text-1 {
     transform: translateX(var(--bg-text-1-translate));
-}
+} */
 
 hero .bg-text-2 {
     justify-content: end;
-    transform: translateX(var(--bg-text-2-translate));
+    /* transform: translateX(var(--bg-text-2-translate)); */
+}
+
+hero .filters-1 {
+    background: #ff0000;
+    mix-blend-mode: saturation;
+}
+
+hero .filters-2 {
+    background: #ff0000;
+    mix-blend-mode: soft-light;
 }
