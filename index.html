@@ -10,6 +10,11 @@
 </head>
 
 <body>
+    <!-- loader -->
+    <div class="loader-container position-absolute w-100 h-100 z-2">
+        <div class="loader position-absolute start-50 top-50 translate-middle"></div>
+    </div>
+
     <hero class="vh-100 d-flex justify-content-center align-items-center bg-light position-relative">
         <div class="text-container f-climate-crisis text-uppercase w-100">
             <div class="bg-text-1 w-100">3D-Modal 3D-Modal</div>
@@ -24,11 +29,10 @@
             <model-viewer camera-controls src="assets/3d-modal/Dancing-Twerk.glb" alt="3D Modal" disable-zoom
                 disable-tap autoplay disable-pan shadow-intensity="0.1" interaction-prompt="none">
             </model-viewer>
-
         </div>
 
-        <div class="filters-1 position-absolute h-100 w-100 z-1"></div>
-        <div class="filters-2 position-absolute h-100 w-100 z-1"></div>
+        <div class="filters-1 position-absolute h-100 w-100 z-n1"></div>
+        <div class="filters-2 position-absolute h-100 w-100 z-n1"></div>
     </hero>
 
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
