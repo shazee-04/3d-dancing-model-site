@@ -34,6 +34,10 @@ hero .text-container div {
 }
 
 hero .main-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-wrap: nowrap;
     color: transparent;
     background: linear-gradient(to right, var(--accent-color-3), var(--accent-color-1));
     background-clip: text;
